@@ -3,19 +3,13 @@ import java.util.Scanner;
 public class Bai3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        // Nhập số phần tử của mảng
         System.out.print("Nhập số phần tử của mảng: ");
         int n = sc.nextInt();
         double[] arr = new double[n];
-
-        // Nhập các phần tử
         System.out.println("Nhập các phần tử của mảng:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextDouble();
         }
-
-        // Tìm số bé nhất và vị trí của nó
         double min = arr[0];
         int index = 0;
         for (int i = 1; i < n; i++) {
@@ -24,8 +18,6 @@ public class Bai3 {
                 index = i;
             }
         }
-
-        // Xuất kết quả
         System.out.println("Số nhỏ nhất trong mảng là: " + min);
         System.out.println("Vị trí của nó trong mảng là: " + index);
     }
